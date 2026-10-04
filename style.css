@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3ff;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+h1 {
+    color: #4169e1;
+    font-size: 40px;
+}
+
+h2 {
+    color: #182848;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    background: #4169e1;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #182848;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background: white;
+    color: #222;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode h1 {
+    color: #8da5ff;
+}
+
+.dark-mode h2 {
+    color: #b8c5ff;
+}
+
+.dark-mode p {
+    color: #eeeeee;
+}
+
+
+/* Skills Options */
+
+.dark-mode li {
+    background: #2b2b2b;
+    color: white;
+    box-shadow: 0 3px 10px #000;
+}
+
+
+/* Dark Mode Button */
+
+.dark-mode button {
+    background: #4169e1;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background: #607dff;
+}
+function showContact() {
+    var contact = document.getElementById("contactInfo");
+
+    if (contact.style.display === "none") {
+        contact.style.display = "block";
+    } else {
+        contact.style.display = "none";
+    }
+}
